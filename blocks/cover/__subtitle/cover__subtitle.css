@@ -8,4 +8,6 @@
   text-align: center;
   color: #FFFFFF;
   z-index: 20;
+  pointer-events: none;
+  position: relative;
 }

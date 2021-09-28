@@ -1,4 +1,17 @@
 .content__wrapper {
-    max-width: 984px;
-    margin: 0 auto;
+  max-width: 984px;
+  margin: 0 auto;
 }
+
+@media screen and (max-width: 1024px) {
+  .content__wrapper {
+    max-width: 928px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content__wrapper {
+    max-width: 100%;
+  }
+}
+
