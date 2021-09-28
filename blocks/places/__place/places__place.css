@@ -1,6 +1,27 @@
 .places__place {
   margin-bottom: 80px;
 }
+
 .places__place:last-of-type {
   margin-bottom: 92px;
+}
+
+@media screen and (max-width: 768px) {
+  .places__place {
+    margin: 0 24px 73px;
+  }
+
+  .places__place:last-of-type {
+    margin-bottom: 90px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .places__place {
+    margin: 0 0 50px;
+  }
+
+  .places__place:last-of-type {
+    margin-bottom: 66px;
+  }
 }

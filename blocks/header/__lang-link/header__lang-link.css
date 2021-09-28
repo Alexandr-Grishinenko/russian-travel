@@ -2,16 +2,11 @@
   color: #fff;
   font-size: 24px;
   line-height: 28px;
-  text-decoration: none;
   transition: opacity 0.2s ease;
 }
 
 .header__lang-link:hover {
   opacity: 0.8;
-}
-
-.header__lang-link:first-of-type {
-  text-decoration: underline;
 }
 
 @media screen and (max-width: 320px) {

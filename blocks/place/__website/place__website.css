@@ -1,8 +1,19 @@
 .place__website {
+  margin: 0;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 22px;
   color: #FFFFFF;
   align-self: end;
+}
+
+.place__description {
+
+}
+
+@media screen and (max-width: 320px) {
+  .place__website {
+    margin: 0 16px;
+  }
 }

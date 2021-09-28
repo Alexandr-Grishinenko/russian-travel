@@ -5,13 +5,15 @@
 
 @media screen and (max-width: 1024px) {
   .content__wrapper {
-    max-width: 928px;
+    max-width: 100%;
+    margin: 0 48px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .content__wrapper {
     max-width: 100%;
+    margin: 0;
   }
 }
 
