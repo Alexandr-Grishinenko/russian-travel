@@ -8,7 +8,8 @@
   text-align: center;
   color: #FFFFFF;
   z-index: 20;
-  position: relative;
+  pointer-events: none;
+  opacity: 1;
 }
 
 @media screen and (max-width: 530px) {
