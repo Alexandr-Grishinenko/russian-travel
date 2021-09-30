@@ -8,10 +8,6 @@
   align-self: end;
 }
 
-.place__description {
-
-}
-
 @media screen and (max-width: 320px) {
   .place__website {
     margin: 0 16px;
