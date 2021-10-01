@@ -75,9 +75,7 @@
       </section>
       <!-- После ревью: удалил <div class="content__wrapper">, который действительно оборачивал всего 1 тег -->
       <section class="places content__places">
-        <!-- После ревью: <div class="place..> заменил на <article class="place..>
-          Перед отправкой на первую проверку были сомнения. Тут вроде перечисление, предполагал, что стоит использовать списки.
-        Но article действительно кажется уместнее. Спасибо -->
+        <!-- После ревью: <div class="place..> заменил на <article class="place..> -->
         <article class="place places__place">
           <!-- После ревью: h3 заменил на h2 -->
           <h2 class="place__title">Куршская коса</h2>
@@ -140,24 +138,15 @@
           </div>
         </article>
       </section>
-        <!-- После ревью: Блок cover. Заголовок и подзаголовок поместил внутрь тега <a>.
-          Чтобы справиться с opacity, заголовки центрировал не флексом, а position. Других способов избавиться от действия cover__overlay не нашёл.
-          Скорее всего я чего-то не знаю, но мне кажется, мой вариант был проще :)
-          <section class="cover content__cover">
-            <a class="cover__overlay" target="_blank" href="https://stampsy.com/na-elektrichkakh-do-baikala">
-            <h2 class="cover__title">До Байкала &laquo;на&nbsp;собаках&raquo;</h2>
-            <p class="cover__subtitle">По мотивам учебной темы о Транссибе — путешествие от столицы до Байкала на электричках.</p>
-          </section>
-          Где, благодаря pointer-events: none;, ссылка работала в любом месте блока cover.
-          Единственное, перед сдачей работы на проверку, я добавил это свойство только заголовку, а подзаголовку cover__subtitle добавить забыл.
+        <!-- После ревью: так вот, оказывается, как можно было сделать)
+          Спасибо за наводку.
+          Нет лишних тегов теперь, стилей тоже чуть меньше.
+          position:absolute теперь только у псевдоэлемента cover::before 
         -->
       <section class="cover content__cover">
         <a class="cover__link" target="_blank" href="https://stampsy.com/na-elektrichkakh-do-baikala">
-          <div class="cover__overlay"></div>
-          <div class="cover__text">
-            <h2 class="cover__title">До&nbsp;Байкала &laquo;на&nbsp;собаках&raquo;</h2>
-            <p class="cover__subtitle">По&nbsp;мотивам учебной темы о&nbsp;Транссибе&nbsp;&mdash; путешествие от&nbsp;столицы до&nbsp;Байкала на&nbsp;электричках.</p>
-          </div>
+          <h2 class="cover__title">До&nbsp;Байкала &laquo;на&nbsp;собаках&raquo;</h2>
+          <p class="cover__subtitle">По&nbsp;мотивам учебной темы о&nbsp;Транссибе&nbsp;&mdash; путешествие от&nbsp;столицы до&nbsp;Байкала на&nbsp;электричках.</p>
         </a>
       </section>
     </main>
