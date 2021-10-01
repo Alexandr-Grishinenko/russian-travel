@@ -9,26 +9,12 @@
   <link rel="stylesheet" href="./pages/index.css">
 </head>
 
-<!-- Ольга, здравствуйте.
-Спасибо за ревью. Оказывается, многое упустил.
-Не понял только один момент.
-В общем комментарии, в списке Надо исправить/На 320, третий пункт.
-"карточки мест не по макету http://joxi.ru/MAj5dwbi13xQ82 , http://joxi.ru/zAN3MLau8L6k6r"
-Ощущение, что у нас в этом месте макеты немного расходятся.
-
-Скрин сравнения макета и работы: http://joxi.ru/E2plkXXH4J85X2
-
-И спасибо за joxi, полезная штуковина :)
--->
-
 <body class="root">
   <div class="page root__page">
     <header class="header page__header">
-      <!-- После ревью: логотип вывел через <img>, а не через background -->
       <img src="./images/header-logo.svg" alt="Логотип &laquo;Россия&raquo;" class="header__logo">
       <ul class="header__lang-selection">
         <li class="header__lang-list-item">
-          <!-- После ревью: добавил элементу __lang-link модификатор _underline -->
           <a href="#" class="header__lang-link header__lang-link_underline">Ru</a>
         </li>
         <li class="header__lang-list-item">
@@ -50,12 +36,12 @@
           <h2 class="intro__title">Чего мы там не&nbsp;видели?</h2>
           <p class="intro__text">По&nbsp;опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать, но&nbsp;только&nbsp;36% планируют провести отпуск в&nbsp;родной стране. Мол, чего мы&nbsp;тут, дома, не&nbsp;видели? На&nbsp;самом деле, Россия&nbsp;&mdash; это целая вселенная с&nbsp;ласковым морем юга, густыми лесами Саян и&nbsp;суровыми льдами плато Путорана. А&nbsp;ещё увидеть все эти красоты можно без миллионов на&nbsp;счету, загранпаспорта и&nbsp;многочасовых перелетов. Как, например, Вера Башмакова&nbsp;&mdash; смелая молодая мама, которая взяла в&nbsp;охапку троих детей, усадила их&nbsp;в&nbsp;свою &laquo;Ладу&raquo; и&nbsp;проехала 20&nbsp;тысяч километров по&nbsp;родной стране. Мы&nbsp;выбрали и&nbsp;описали некоторые интересные места, достойные вашего отпуска.</p>
           <ul class="intro__list">
-            <!-- После ревью: Выделил жирным только ту часть текста, которая должна быть выделена жирным. Числа теперь не жирные -->
-            <li class="intro__list-item"><span class="text-accent text-accent_bold">Часовых поясов</span> 11</li>
-            <li class="intro__list-item"><span class="text-accent text-accent_bold">Объектов природного наследия ЮНЕСКО</span> 12</li>
-            <li class="intro__list-item"><span class="text-accent text-accent_bold">Объектов культурного наследия ЮНЕСКО</span> 16</li>
-            <li class="intro__list-item"><span class="text-accent text-accent_bold">Природных заповедников</span> 105</li>
-            <li class="intro__list-item"><span class="text-accent text-accent_bold">Аэропортов</span> 241</li>
+            <!-- После ревью: Сделал span элементом блока intro -->
+            <li class="intro__list-item"><span class="intro__span-accent">Часовых поясов</span> 11</li>
+            <li class="intro__list-item"><span class="intro__span-accent">Объектов природного наследия ЮНЕСКО</span> 12</li>
+            <li class="intro__list-item"><span class="intro__span-accent">Объектов культурного наследия ЮНЕСКО</span> 16</li>
+            <li class="intro__list-item"><span class="intro__span-accent">Природных заповедников</span> 105</li>
+            <li class="intro__list-item"><span class="intro__span-accent">Аэропортов</span> 241</li>
           </ul>
         </section>
       </div>
@@ -73,11 +59,8 @@
         <img src="./images/photo-grid-baikal-2.jpg" alt="" class="photo-grid__item">
         <img src="./images/photo-grid-ergaki.jpg" alt="" class="photo-grid__item">
       </section>
-      <!-- После ревью: удалил <div class="content__wrapper">, который действительно оборачивал всего 1 тег -->
       <section class="places content__places">
-        <!-- После ревью: <div class="place..> заменил на <article class="place..> -->
         <article class="place places__place">
-          <!-- После ревью: h3 заменил на h2 -->
           <h2 class="place__title">Куршская коса</h2>
           <div class="place__website">
             <p class="place__url-heading">url</p>
@@ -138,11 +121,6 @@
           </div>
         </article>
       </section>
-        <!-- После ревью: так вот, оказывается, как можно было сделать)
-          Спасибо за наводку.
-          Нет лишних тегов теперь, стилей тоже чуть меньше.
-          position:absolute теперь только у псевдоэлемента cover::before 
-        -->
       <section class="cover content__cover">
         <a class="cover__link" target="_blank" href="https://stampsy.com/na-elektrichkakh-do-baikala">
           <h2 class="cover__title">До&nbsp;Байкала &laquo;на&nbsp;собаках&raquo;</h2>
@@ -150,6 +128,9 @@
         </a>
       </section>
     </main>
+    <!-- После ревью: медиа-точку поставил чуть раньше, чтобы футер отображался нормально/
+    Была точка на (max-width: 500px), теперь на (max-width: 550px)
+    -->
     <footer class="footer page__footer">
       <nav class="footer__navigation">
         <ul class="footer__menu">

@@ -6,7 +6,7 @@
   margin-bottom: 0;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   .footer__menu-item {
     margin-bottom: 32px;
   }
