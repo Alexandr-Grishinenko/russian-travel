@@ -11,8 +11,8 @@
 
 <!-- Ольга, здравствуйте.
 Спасибо за ревью. Оказывается, многое упустил.
-Не понял только один момент:
-в общем комментарии, в списке Надо исправить/На 320, третий пункт.
+Не понял только один момент.
+В общем комментарии, в списке Надо исправить/На 320, третий пункт.
 "карточки мест не по макету http://joxi.ru/MAj5dwbi13xQ82 , http://joxi.ru/zAN3MLau8L6k6r"
 Ощущение, что у нас в этом месте макеты немного расходятся.
 
@@ -24,7 +24,8 @@
 <body class="root">
   <div class="page root__page">
     <header class="header page__header">
-      <div class="header__logo"></div>
+      <!-- После ревью: логотип вывел через <img>, а не через background -->
+      <img src="./images/header-logo.svg" alt="Логотип &laquo;Россия&raquo;" class="header__logo">
       <ul class="header__lang-selection">
         <li class="header__lang-list-item">
           <!-- После ревью: добавил элементу __lang-link модификатор _underline -->
